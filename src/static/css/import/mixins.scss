@@ -1,0 +1,10 @@
+@mixin block-icon($bg, $top) {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 47px;
+    height: 47px;
+    background: $bg;
+    top: $top;
+}

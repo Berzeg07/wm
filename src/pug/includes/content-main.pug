@@ -1,0 +1,81 @@
+main
+    .about#about
+        p.main-title Личная информация
+        ul.about__list
+            li
+                input(type="text" placeholder="ФИО" value="Березгов Аслан Русланович").inp
+            li   
+                label.about__date
+                    input(placeholder="Год рождения" value="15.02.1986").inp#datep
+            li
+                input(type="text" placeholder="Место проживания" value="Нальчик").inp
+            li
+                input(type="text" placeholder="Skype" value="berezgov1986").inp
+            li
+                input(type="text" placeholder="E-mail" value="E-mail").inp     
+
+    .container.skills#skill
+        p.main-title.main-title_big Расскажите о своем опыте
+        .skills__inner
+            ul.skills__list
+                li
+                    input(type="checkbox" checked).check#bem
+                    label(for="bem") БЭМ/OOCSS
+                li
+                    input(type="checkbox" checked).check#css
+                    label(for="css") Stylus/LESS/SASS
+                li
+                    input(type="checkbox" checked).check#svg
+                    label(for="svg") Работаю с SVG
+
+            ul.skills__list
+                li
+                    input(type="checkbox").check#sem
+                    label(for="sem") Верстаю семантично
+                li
+                    input(type="checkbox" checked).check#es6
+                    label(for="es6") ES2015/ES2016
+                li
+                    input(type="checkbox" checked).check#gulp
+                    label(for="gulp") Gulp/GRUNT
+
+            ul.skills__list
+                li
+                    input(type="checkbox" checked).check#webpack
+                    label(for="webpack") Webpack
+                li
+                    input(type="checkbox" checked).check#jquery
+                    label(for="jquery") JQuery
+                li
+                    input(type="checkbox" checked).check#git
+                    label(for="git") Использую Git        
+
+    .container.js-level#js-level
+        p.main-title.main-title_big Уровень владения JavaScript
+        .js-range
+            .js-range__line.js-range__line_min
+            .js-range__text.js-range__text_min
+                span Не владею
+                b 0%
+            .js-range__line.js-range__line_left
+            .js-range__text.js-range__text_left
+                span Использую готовые <br> решения
+                b 25%
+            .js-range__line.js-range__line_center
+            .js-range__text.js-range__text_center
+                span Использую готовые решения <br> и умею переделывать
+                b 50%
+            .js-range__line.js-range__line_max
+            .js-range__text.js-range__text_max
+                span Пишу сложный JS с нуля
+                b 100%
+
+
+            #polzunok
+
+    .about-me#about-self
+        p.main-title.main-title_big Расскажите о себе
+        p.about-me__article Напишите несколько предложений, чем привлекла наша вакансия<br> и что вы ожидаете от работы у нас.
+        textarea(placeholder="Понравилось тем, что...").textblock
+            |Моя цель - работа в серьезной компании, в команде профессионалов, чтобы развиваться и расти сам как профессионал. Уверен, в такой долгоживущей компании есть все для этого, высокие требования, интересные задачи, скилловая команда, которая поможет нарастить навыки.
+        button.btn Готово    
